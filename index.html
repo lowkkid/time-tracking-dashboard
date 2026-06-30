@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>time-tracking-dashboard</title>
-  <link href="./dist/output.css" rel="stylesheet">
-  <link rel="icon" href="assets/icons/favicon-32x32.png">
-  <script src="./script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time-tracking-dashboard</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="icon" href="assets/icons/favicon-32x32.png">
+    <script src="./script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
-  <h1 class="text-2xl font-bold text-gray-800">time-tracking-dashboard</h1>
+<body class="flex min-h-screen bg-navy-950">
+<main class="m-auto">
+    <header class="bg-navy-900 pb-[1.5625rem] rounded-[15px] flex flex-col gap-6 overflow-hidden">
+        <div class="bg-purple-600 p-8">
+            <div class="flex gap-6 items-center">
+                <img src="assets/icons/user.png" alt="user" class="rounded-full w-16 h-16">
+                <div class="flex flex-col gap-2">
+                    <span class="text-6 text-navy-200">Report for</span>
+                    <span class="text-4 text-white">Jeremy Robson</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex text-5-regular text-purple-500">
+            <button id="daily" class="w-[109px] cursor-pointer">Daily</button>
+            <button id="weekly" class="w-[109px] cursor-pointer">Weekly</button>
+            <button id="monthly" class="w-[109px] cursor-pointer">Monthly</button>
+        </div>
+    </header>
+    <section></section>
+</main>
 </body>
 </html>
