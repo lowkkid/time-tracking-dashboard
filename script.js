@@ -1,10 +1,10 @@
 const CATEGORY_STYLING_MAP = {
-    "Work": {"icon": "/assets/icons/icon-work.svg", "class": "bg-orange-300"},
-    "Play": {"icon": "/assets/icons/icon-play.svg", "class": "bg-blue-300"},
-    "Study": {"icon": "/assets/icons/icon-study.svg", "class": "bg-pink-400"},
-    "Exercise": {"icon": "/assets/icons/icon-exercise.svg", "class": "bg-green-400"},
-    "Social": {"icon": "/assets/icons/icon-social.svg", "class": "bg-purple-700"},
-    "Self Care": {"icon": "/assets/icons/icon-self-care.svg", "class": "bg-yellow-300"},
+    "Work": {"icon": "assets/icons/icon-work.svg", "class": "bg-orange-300"},
+    "Play": {"icon": "assets/icons/icon-play.svg", "class": "bg-blue-300"},
+    "Study": {"icon": "assets/icons/icon-study.svg", "class": "bg-pink-400"},
+    "Exercise": {"icon": "assets/icons/icon-exercise.svg", "class": "bg-green-400"},
+    "Social": {"icon": "assets/icons/icon-social.svg", "class": "bg-purple-700"},
+    "Self Care": {"icon": "assets/icons/icon-self-care.svg", "class": "bg-yellow-300"},
 }
 
 const getPreviousDateString = (mode, value) => {
@@ -66,7 +66,7 @@ const appendItem = (item) => {
 };
 
 
-fetch("/data/data.json")
+fetch("data/data.json")
     .then(response => response.json())
     .then(data => {
         userData = data;
