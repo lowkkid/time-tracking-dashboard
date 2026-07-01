@@ -12,24 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 </head>
 <body class="flex min-h-screen bg-navy-950">
-<main class="m-auto">
-    <header class="bg-navy-900 pb-[1.5625rem] rounded-[15px] flex flex-col gap-6 overflow-hidden">
+<main class="m-auto flex flex-col gap-6">
+    <header class="flex flex-col gap-6 overflow-hidden rounded-[15px] bg-navy-900 pb-[1.5625rem]">
         <div class="bg-purple-600 p-8">
-            <div class="flex gap-6 items-center">
-                <img src="assets/icons/user.png" alt="user" class="rounded-full w-16 h-16">
+            <div class="flex items-center gap-6">
+                <img src="assets/icons/user.png" alt="user" class="h-16 w-16 rounded-full">
                 <div class="flex flex-col gap-2">
                     <span class="text-6 text-navy-200">Report for</span>
                     <span class="text-4 text-white">Jeremy Robson</span>
                 </div>
             </div>
         </div>
-        <div class="flex text-5-regular text-purple-500">
-            <button id="daily" class="w-[109px] cursor-pointer">Daily</button>
-            <button id="weekly" class="w-[109px] cursor-pointer">Weekly</button>
-            <button id="monthly" class="w-[109px] cursor-pointer">Monthly</button>
+        <div id="filter-buttons" class="flex text-5-regular text-purple-500">
+            <button id="daily" class="w-[109px] cursor-pointer hover:text-purple-600" data-active="true">Daily</button>
+            <button id="weekly" class="w-[109px] cursor-pointer hover:text-purple-600" data-active="false">Weekly</button>
+            <button id="monthly" class="w-[109px] cursor-pointer hover:text-purple-600" data-active="false">Monthly</button>
         </div>
     </header>
-    <section></section>
+    <section>
+        <ul id="data-list" class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        </ul>
+    </section>
 </main>
 </body>
 </html>
