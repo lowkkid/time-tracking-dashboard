@@ -51,6 +51,8 @@
   --color-green-400: #4BCF82;
   --color-yellow-300: #F1C75B;
   --color-gray-200: #D8D8D8;
+
+  --breakpoint-lg: 90rem;
 }
 
 #filter-buttons button[data-active=true] {

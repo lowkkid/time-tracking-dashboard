@@ -11,22 +11,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 </head>
-<body class="flex min-h-screen bg-navy-950">
-<main class="m-auto flex flex-col gap-6">
-    <header class="flex flex-col gap-6 overflow-hidden rounded-[15px] bg-navy-900 pb-[1.5625rem]">
-        <div class="bg-purple-600 p-8">
-            <div class="flex items-center gap-6">
-                <img src="assets/icons/user.png" alt="user" class="h-16 w-16 rounded-full">
-                <div class="flex flex-col gap-2">
+<body class="flex min-h-screen bg-navy-950 py-16">
+<main class="m-auto flex flex-col gap-6 lg:flex-row lg:gap-8">
+    <header class="flex flex-col gap-6 overflow-hidden rounded-[15px] bg-navy-900 pb-[1.5625rem] lg:p-8 lg:max-w-[255px]">
+        <div class="bg-purple-600 p-8 lg:-mt-8 lg:-mx-8 lg:rounded-b-[15px]">
+            <div class="flex items-center gap-6 lg:flex-col lg:items-start lg:gap-10">
+                <img src="assets/icons/user.png" alt="user" class="h-16 w-16 rounded-full lg:w-[78px] lg:h-[78px]">
+                <div class="flex flex-col gap-2 lg:gap-0">
                     <span class="text-6 text-navy-200">Report for</span>
-                    <span class="text-4 text-white">Jeremy Robson</span>
+                    <span class="text-4 text-white lg:text-2">Jeremy Robson</span>
                 </div>
             </div>
         </div>
-        <div id="filter-buttons" class="flex text-5-regular text-purple-500">
-            <button id="daily" class="w-[109px] cursor-pointer hover:text-purple-600" data-active="true">Daily</button>
-            <button id="weekly" class="w-[109px] cursor-pointer hover:text-purple-600" data-active="false">Weekly</button>
-            <button id="monthly" class="w-[109px] cursor-pointer hover:text-purple-600" data-active="false">Monthly</button>
+        <div id="filter-buttons" class="flex text-5-regular text-purple-500 justify-center lg:flex-col lg:items-start lg:gap-[21px]">
+            <button id="daily" class="w-[109px] cursor-pointer hover:text-purple-600 lg:w-auto" data-active="true">Daily</button>
+            <button id="weekly" class="w-[109px] cursor-pointer hover:text-purple-600 lg:w-auto" data-active="false">Weekly</button>
+            <button id="monthly" class="w-[109px] cursor-pointer hover:text-purple-600 lg:w-auto" data-active="false">Monthly</button>
         </div>
     </header>
     <section>

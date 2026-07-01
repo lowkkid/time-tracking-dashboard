@@ -48,15 +48,15 @@ let userData;
 
 const appendItem = (item) => {
     dataList.insertAdjacentHTML('beforeend', `
-        <li class="${CATEGORY_STYLING_MAP[item.title].class} overflow-hidden rounded-[15px] bg-no-repeat pt-[2.375rem]" style="background-image: url(${CATEGORY_STYLING_MAP[item.title].icon}); background-position: top -10px right 10px;">
-            <div class="rounded-t-[15px] bg-navy-900 p-6">
-                <div class="flex flex-col gap-2">
+        <li class="${CATEGORY_STYLING_MAP[item.title].class} overflow-hidden rounded-[15px] bg-no-repeat pt-[2.375rem] lg:w-[255px]" style="background-image: url(${CATEGORY_STYLING_MAP[item.title].icon}); background-position: top -10px right 10px;">
+            <div class="rounded-t-[15px] bg-navy-900 p-6 lg:p-8">
+                <div class="flex flex-col gap-2 md:gap-4 lg:gap-6">
                     <div class="flex items-center justify-between">
                         <span class="text-5-medium text-white">${item.title}</span>
                         <img src="assets/icons/icon-ellipsis.svg" alt="Ellipsis" class="h-[5px] w-[21px] cursor-pointer"/>
                     </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-3 text-white">${item.timeframes[mode].current}${getHoursSuffix(item.timeframes[mode].current)}</span>
+                    <div class="flex items-center justify-between md:flex-col md:gap-2 md:justify-start md:items-start md:w-[170px] lg:w-auto">
+                        <span class="text-3 text-white md:text-1">${item.timeframes[mode].current}${getHoursSuffix(item.timeframes[mode].current)}</span>
                         <span class="text-6 text-navy-200">${getPreviousDateString(mode, item.timeframes[mode].previous)}</span>
                     </div>
                 </div>
