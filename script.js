@@ -49,7 +49,7 @@ let userData;
 const appendItem = (item) => {
     dataList.insertAdjacentHTML('beforeend', `
         <li class="${CATEGORY_STYLING_MAP[item.title].class} overflow-hidden rounded-[15px] bg-no-repeat pt-[2.375rem] lg:w-[255px]" style="background-image: url(${CATEGORY_STYLING_MAP[item.title].icon}); background-position: top -10px right 10px;">
-            <div class="rounded-t-[15px] bg-navy-900 p-6 lg:p-8">
+            <div class="rounded-t-[15px] bg-navy-900 p-6 lg:p-8 lg:h-full">
                 <div class="flex flex-col gap-2 md:gap-4 lg:gap-6">
                     <div class="flex items-center justify-between">
                         <span class="text-5-medium text-white">${item.title}</span>
